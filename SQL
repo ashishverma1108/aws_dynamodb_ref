@@ -1,0 +1,15 @@
+## Identify location with highest value for a given column
+
+
+### Works in MySQL, Postgess, Athena. Offset doesn;t wokr in Athena
+
+select location, sum(value) as test_sum from "test345"."test" 
+group by location
+order by test_sum DESC limit 1;
+
+## Get location with thrid highest value for a given colu
+### Works in MySQL, Postgess,
+
+select location, sum(value) as test_sum from "test345"."test" 
+group by location
+order by test_sum DESC limit 1 offset 2;
