@@ -1,1 +1,1 @@
-# aws_dynamodb_ref
+# Useful scripts for all databases
